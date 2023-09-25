@@ -1,0 +1,235 @@
+/* Stili generali */
+body {
+    background: #2193b0;
+    /* colore di sfondo */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Stili header */
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #6f6f6f;
+}
+
+/* Stili player */
+
+.player {
+    position: relative;
+}
+
+.player audio {
+    width: 100%;
+    outline: none;
+}
+
+/* Stili controlli */
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.play-pause {
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.play-pause:hover {
+    color: #2193b0;
+}
+
+/* Stili playlist */
+.playlist {
+    margin-top: 50px;
+    border: 2px solid #2193b0;
+    border-radius: 5px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #2193b0;
+    border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background-color: #0b7dda;
+    /* Colore della scrollbar al passaggio del mouse */
+}
+
+.list scrollbar {
+    width: 10px;
+}
+
+.list scrollbar-thumb {
+    background-color: #2193b0;
+    border-radius: 10px;
+    /* Arrotondamento dei bordi della scrollbar */
+}
+
+.list scrollbar-thumb:hover {
+    background-color: #0b7dda;
+}
+
+
+.list li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.list li:hover {
+    background: #2193b0;
+    color: #fff;
+}
+
+.list li span {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+/* Stili per il controllo del volume */
+.volume-control {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.volume-control label {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Barra del volume */
+.volume-control input[type="range"] {
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(to right, #ccc 0%, #ccc 100%);
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 13px;
+}
+
+/* Track della barra del volume */
+.volume-control input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: transparent;
+}
+
+/* Pulsante del volume */
+.volume-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #2193b0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -8px;
+}
+
+/* Stile al passaggio del mouse */
+.volume-control input[type="range"]:hover::-webkit-slider-thumb {
+    background-color: #0b7dda;
+}
+
+/* Stile al passaggio del mouse */
+.volume-control input[type="range"]:hover {
+    background: linear-gradient(to right, #ccc 0%, #0b7dda 100%);
+}
+
+/* Stili per la progress bar */
+.progress-bar {
+    height: 10px;
+    background-color: #ccc;
+    margin-top: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #2193b0;
+    transition: width 0.1s;
+}
+
+.fas {
+    font-size: 25px;
+}
+
+/* Stili per la barra di ricerca */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+#search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#search-icon:hover {
+    color: #2193b0;
+}

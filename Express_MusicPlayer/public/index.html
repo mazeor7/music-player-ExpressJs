@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Lettore Musicale</h1>
+            <p>La mia playlist</p>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Cerca una canzone..." list="search-results">
+                <i class="fas fa-search" id="search-icon"></i>
+            </div>
+
+        </header>
+
+        <!-- Player -->
+        <div class="player">
+            <audio id="music-player" muted></audio>
+
+            <div class="controls">
+                <i class="fas fa-backward play-pause" id="prev"></i>
+                <i class="fas fa-play play-pause" id="play"></i>
+                <i class="fas fa-forward play-pause" id="next"></i>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <!-- Elemento di input per il volume -->
+        <div class="volume-control">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.001" value="0.15">
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <ul class="list" id="playlist">
+                <!-- Gli elementi della playlist verranno generati dinamicamente qui -->
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/4f3ce16e3e.js"></script>
+    <script src="script.js"></script>r
+</body>
+
+</html>
