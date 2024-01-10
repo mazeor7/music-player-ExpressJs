@@ -1,5 +1,3 @@
-# MusicPlayer_Express
-
 <div align="center">
   
 ## 🌐 Project Overview
