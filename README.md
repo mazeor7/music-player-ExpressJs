@@ -1,11 +1,13 @@
 # MusicPlayer_Express
 
+<div align="center">
+  
 ## 🌐 Project Overview
-<div>
-  I create this Music player with Html, Css, Javascript, Express.js, fs and path's modules. The feature is that you can uplaod directly which song you prefer, the player will be elaborate it and after you can already listen the song.
-</div>
 
-</div align="center">
+</div>
+  I create this Music player with Html, Css, Javascript, Express.js, fs and path's modules. The feature is that you can uplaod directly which song you prefer, the player will be elaborate it and after you can already listen the song.
+
+<div align="center">
 
 ## 💻 Installation and Usage
 
