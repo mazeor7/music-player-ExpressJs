@@ -11,8 +11,6 @@
 
 </div>
 
-<h2>The commands for install Express.js, fs and path's module:</h2>
-
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/matteotorna/DeliveryOnline.git
